@@ -1,0 +1,86 @@
+<head>
+  <style>  
+    body {
+      margin: 0;
+      background: #424b49;
+    }
+    #background {
+      background: url(background.jpg) center no-repeat;
+      background-size: 100% 100%;
+      display: block;
+      height: 100%;
+      margin-left: 10%;
+      position: relative;
+      width: 80%;
+    }
+    label {
+      display: none;
+      height: 100%;
+      position: absolute;
+      width: 100%; 
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    input[type="radio"] {
+      display: none;
+    }
+    input[type="radio"]:checked + label {
+      display: block;
+    }
+    .left-top {      
+      left: 7%;
+      top: 4%;
+    }
+    .right-top {
+      right: 7%;
+      top: 4%;
+    }
+    .left-bottom {
+      left: 7%;
+      bottom: 10%;
+    }
+    .right-bottom {
+      right: 7%;
+      bottom: 10%;
+    }
+    label p {
+      font-family: 'Arial Regular';
+      font-size: 22px;
+      height: auto;
+      line-height: 29px;
+      position: absolute;
+      width: 30%; 
+    }
+  </style>  
+</head>
+<body >
+  <article id="background">
+    <input type="radio" name="a" id="01" checked>
+    <label for="02">
+      <p class="left-top">
+        First First First First First First First First First 
+        First First First First First First First First First 
+      </p>
+    </label>
+    <input type="radio" name="a" id="02">
+    <label for="03">
+      <p class="right-top">
+        second second second second second second second second 
+        second second second second second second second second 
+      </p>
+    </label>
+    <input type="radio" name="a" id="03">
+    <label for="04">
+      <p class="left-bottom">
+        third third third third third third third third third
+        third third third third third third third third third 
+      </p>
+    </label>
+    <input type="radio" name="a" id="04">
+    <label>
+      <p class="right-bottom">
+        fourth fourth fourth fourth fourth fourth fourth 
+        fourth fourth fourth fourth fourth fourth fourth 
+      </p>
+    </label>
+  </article>
+</body>
